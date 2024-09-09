@@ -26,7 +26,10 @@ This repository showcases my growing data analysis skills. Mastering data analys
 - **Skills Demonstrated**: Data cleaning, aggregation, visualization.
 - **Tools Used**: SQL, PowerBI
 
-### 3. Cohorts Analysis
+### 3. [Cohorts Analysis](project_cohorts)
 - **Objective**: Analyze weekly cohort behavior to find changes and suggest recommendations.
 - **Skills Demonstrated**: Data cleaning, aggregation, visualization.
 - **Tools Used**: SQL, PowerBI
+- **Files**:
+  - [PowerBI File (.pbix)](project_cohorts/Cohorts%20Portfolio%20Project.pbix)
+  - [PDF Report](project_cohorts/Cohorts%20Portfolio%20Project.pdf)
