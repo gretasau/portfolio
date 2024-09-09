@@ -10,5 +10,5 @@ Greta Šaumanė, July 2024
 Analyze weekly cohort behavior to find changes and suggest recommendations.
 
 ## Files
-- [PowerBI File (.pbix)](New%20Adventure%20Portfolio%20Project.pbix)
-- [PDF Report](New%20Adventure%20Portfolio%20Project.pdf)
+- [PowerBI File (.pbix)](Cohorts%20Portfolio%20Project.pbix)
+- [PDF Report](Cohorts%20Portfolio%20Project.pdf)
