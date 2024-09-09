@@ -21,10 +21,13 @@ This repository showcases my growing data analysis skills. Mastering data analys
   - [PowerBI File (.pbix)](project_adventureworks/New%20Adventure%20Portfolio%20Project.pbix)
   - [PDF Report](project_adventureworks/New%20Adventure%20Portfolio%20Project.pdf)
 
-### 2. RFM Analysis
+### 2. [RFM Analysis](project_rfm)
 - **Objective**: Segment customers based on purchasing behavior and provide recommended actions.
 - **Skills Demonstrated**: Data cleaning, aggregation, visualization.
 - **Tools Used**: SQL, PowerBI
+- **Files**:
+  - [PowerBI File (.pbix)](project_rfm/RFM%20Analysis%20Portfolio%20Project.pbix)
+  - [PDF Report](project_rfm/RFM%20Analysis%20Portfolio%20Project.pdf)
 
 ### 3. [Cohorts Analysis](project_cohorts)
 - **Objective**: Analyze weekly cohort behavior to find changes and suggest recommendations.
