@@ -13,10 +13,13 @@ This repository showcases my growing data analysis skills. Mastering data analys
 *Note*: Not all tools are represented in the projects yet. This repository will be updated with new projects as I continue learning.
 
 ## Projects
-### 1. AdventureWorks Data Analysis
+### 1. [AdventureWorks Data Analysis](project_adventureworks)
 - **Objective**: Analyze KPIs over time to identify problems and opportunities.
 - **Skills Demonstrated**: Data cleaning, aggregation, visualization. 
 - **Tools Used**: SQL, PowerBI
+- **Files**:
+  - [PowerBI File (.pbix)](project_adventureworks/New%20Adventure%20Portfolio%20Project.pbix)
+  - [PDF Report](project_adventureworks/New%20Adventure%20Portfolio%20Project.pdf)
 
 ### 2. RFM Analysis
 - **Objective**: Segment customers based on purchasing behavior and provide recommended actions.
