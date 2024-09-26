@@ -36,3 +36,11 @@ This repository showcases my growing data analysis skills. Mastering data analys
 - **Files**:
   - [PowerBI File (.pbix)](project_cohorts/Cohorts%20Portfolio%20Project.pbix)
   - [PDF Report](project_cohorts/Cohorts%20Portfolio%20Project.pdf)
+ 
+### 4. [Etsy Shop Analysis](etsy)
+- **Objective**: Analyze Etsy shop, provide small business with answers.
+- **Skills Demonstrated**: Data cleaning, aggregation.
+- **Tools Used**: SQL
+- **Files**:
+  - [Q&A Part1](https://docs.google.com/spreadsheets/d/1KmHcqO6XddgsWjj-EcLLL8BEmWozgxDctK_l_zEW2BY/edit?usp=sharing)
+
