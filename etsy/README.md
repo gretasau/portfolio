@@ -76,7 +76,7 @@ Multiple CSV files with yearly data have been appended in Google Sheets due to t
 
 3. **Adding Date-Related Columns**
 
-Added `Sale_Year`, `Sale_Month`, and `Sale_Day` columns for easier data analysis.
+   Added `Sale_Year`, `Sale_Month`, and `Sale_Day` columns for easier data analysis.
 
    ```sql
    -- Adding date-related columns
@@ -92,10 +92,11 @@ Added `Sale_Year`, `Sale_Month`, and `Sale_Day` columns for easier data analysis
      Sale_Month = EXTRACT(MONTH FROM o.Sale_Date),
      Sale_Day = EXTRACT(DAY FROM o.Sale_Date)
    WHERE o.Sale_Date IS NOT NULL;
+   ```
 
 4. **Calculating Gross Revenue**
 
-The dataset contains various revenue-related columns, but none refer to gross revenue. A `Gross_Revenue` column was added for easier querying.
+   The dataset contains various revenue-related columns, but none refer to gross revenue. A `Gross_Revenue` column was added for easier querying.
 
    ```sql
    -- Adding Gross_Revenue column
@@ -107,11 +108,11 @@ The dataset contains various revenue-related columns, but none refer to gross re
    SET 
      Gross_Revenue = ROUND((o.Order_Value + o.Shipping - o.Discount_Amount), 2)
    WHERE o.Order_ID IS NOT NULL;
-
+   ```
 
 # Data Analysis
 
-Below are the SQL queries used to answer specific business questions.
+   Below are the SQL queries used to answer specific business questions.
 
 1. **Date Range of the Data**
 
@@ -121,6 +122,7 @@ Below are the SQL queries used to answer specific business questions.
      MIN(Sale_Date) AS min_date,
      MAX(Sale_Date) AS max_date
    FROM orders.orders;
+   ```
 
 2. **Yearly Sales (Count of Orders, Items, Revenue)**
 
@@ -135,6 +137,7 @@ Below are the SQL queries used to answer specific business questions.
    WHERE Sale_Year BETWEEN 2019 AND 2023
    GROUP BY Sale_Year
    ORDER BY Sale_Year ASC;
+   ```
 
 3. **Monthly Revenue Change (Last 12 Months Compared to Previous Year)**
 
@@ -178,6 +181,7 @@ Below are the SQL queries used to answer specific business questions.
    FROM rev_this_year AS t
    LEFT JOIN rev_prev_year AS p USING (month)
    ORDER BY year ASC, month ASC;
+   ```
 
 4. **Top 5 Countries by Revenue**
 
@@ -190,6 +194,7 @@ Below are the SQL queries used to answer specific business questions.
    GROUP BY Ship_Country
    ORDER BY revenue DESC
    LIMIT 5;
+   ```
 
 5. **Top 10 States by Revenue**
 
@@ -203,6 +208,7 @@ Below are the SQL queries used to answer specific business questions.
    GROUP BY Ship_State
    ORDER BY revenue DESC
    LIMIT 10;
+   ```
 
 6. **Average Shipping Lag by Year**
 
@@ -215,6 +221,7 @@ Below are the SQL queries used to answer specific business questions.
    WHERE Date_Shipped IS NOT NULL
    GROUP BY Sale_Year
    ORDER BY Sale_Year ASC;
+   ```
 
 7. **Average Order Value by Year**
 
@@ -226,6 +233,7 @@ Below are the SQL queries used to answer specific business questions.
    FROM minilab123.orders.orders 
    GROUP BY Sale_Year
    ORDER BY Sale_Year ASC;
+   ```
 
 8. **Average Items per Order by Year**
 
@@ -237,6 +245,7 @@ Below are the SQL queries used to answer specific business questions.
    FROM minilab123.orders.orders 
    GROUP BY Sale_Year
    ORDER BY Sale_Year ASC;
+   ```
 
 9. **Percentage of Customers Who Made More Than One Order**
 
@@ -253,3 +262,4 @@ Below are the SQL queries used to answer specific business questions.
    SELECT
      ROUND((COUNTIF(users.orders_per_user > 1) / COUNT(*)) * 100, 2) AS perc_returning_users
    FROM users;
+   ```
